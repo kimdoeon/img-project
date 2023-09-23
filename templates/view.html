@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>view image</title>
+  </head>
+  <body>
+    <h1>업로드 된 이미지들</h1>
+
+    <p>
+      <button type="button" onclick="location.href='/' ">뒤로가기</button>
+    </p>
+
+    {% for obj in data_list%}
+        <p>
+            <img src="{{ obj.dir }}" width="175" height="175">
+        </p>
+    {% endfor %}
+  </body>
+</html>
